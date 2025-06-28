@@ -1,0 +1,168 @@
+/* .experience-section {
+  padding: 6rem 12vw;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #6b46c1, #9f7aea);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.experience-title {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: white;
+}
+
+.experience-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.experience-title .underline {
+  width: 8rem;
+  height: 4px;
+  background-color: #8245ec;
+  margin: 1rem auto 0;
+}
+
+.experience-title p {
+  color: #a0aec0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.experience-timeline {
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: white;
+}
+
+.experience-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.experience-entry.left {
+  justify-content: flex-end;
+}
+
+.experience-entry.right {
+  justify-content: flex-start;
+}
+
+.timeline-circle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #a0aec0;
+  border: 4px solid #8245ec;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.timeline-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.experience-card {
+  background-color: #1a202c;
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 20px 1px rgba(130, 69, 236, 0.3);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 28rem;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: scale(1.05);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.company-logo {
+  width: 4rem;
+  height: 4rem;
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.company-info h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+}
+
+.company-info h4 {
+  font-size: 0.875rem;
+  color: #cbd5e0;
+}
+
+.company-info .date {
+  font-size: 0.875rem;
+  color: #718096;
+  margin-top: 0.5rem;
+}
+
+.description {
+  margin-top: 1rem;
+  color: #a0aec0;
+}
+
+.skills {
+  margin-top: 1rem;
+}
+
+.skills h5 {
+  font-weight: 500;
+  color: white;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.skills li {
+  background-color: #8245ec;
+  color: #e2e8f0;
+  padding: 0.25rem 1rem;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  margin: 0 0.5rem 0.5rem 0;
+  border: 1px solid #cbd5e0;
+} */

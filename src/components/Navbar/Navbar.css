@@ -1,0 +1,139 @@
+* {
+  box-sizing:border-box;
+}
+section {
+  scroll-margin-top: 100px;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  transition: background-color 0.3s ease;
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+}
+
+
+.navbar-scrolled {
+  background-color: rgba(5, 4, 20, 0.5);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+} 
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  color: white;
+}
+
+.navbar-logo {
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar-logo .highlight {
+  color: #8245ec;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+  .menu-desktop {
+    display:flex;
+    gap: 2rem;
+    color: #ccc;
+  }
+
+  .social-desktop {
+    display: flex;
+    gap: 1rem;
+    color: #ccc;
+  }
+
+  .social-desktop a:hover {
+    color: #8245ec;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .social-desktop {
+    display: none;
+  }
+}
+
+.menu-item button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+}
+
+.menu-item:hover {
+  color: #8245ec;
+}
+
+.menu-item.active {
+  color: #8245ec;
+}
+
+.menu-toggle .menu-icon {
+  font-size: 1.875rem;
+  color: #8245ec;
+  cursor: pointer;
+}
+
+
+.mobile-menu {
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background-color: rgba(5, 4, 20, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 50;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  color: #ccc;
+}
+
+.social-mobile {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-mobile a:hover {
+  color: white;
+}

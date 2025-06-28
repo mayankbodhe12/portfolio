@@ -1,0 +1,135 @@
+.skills-section {
+  background: linear-gradient(
+      38.73deg,
+      rgba(204, 0, 187, 0.15) 0%,
+      rgba(201, 32, 184, 0) 50%
+    ),
+    linear-gradient(
+      141.27deg,
+      rgba(0, 70, 209, 0) 50%,
+      rgba(0, 70, 209, 0.15) 100%
+    );
+  clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 95%, 0 100%);
+  padding: 6rem 12vw;
+  font-family: sans-serif;
+}
+
+.skills-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skills-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+@media (min-width: 640px) {
+  .skills-heading {
+    font-size: 2.5rem;
+  }
+}
+
+.skills-divider {
+  width: 6rem;
+  height: 0.25rem;
+  background-color: #8245ec;
+  margin: 0.5rem auto 0;
+}
+
+.skills-description {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #9ca3af;;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  padding-top: 2.5rem 0;
+}
+
+.skills-category {
+  background-color: #1f2937;
+  backdrop-filter: blur(10px);
+  padding: 2rem 1.5rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  max-width: 48%;
+  border: 1px solid white;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px 1px rgba(130, 69, 236, 0.3);
+}
+
+@media (max-width: 640px) {
+  .skills-category {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+.skills-category-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #d1d5db;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .skills-category-title {
+    font-size: 1.75rem;
+  }
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .skills-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.skills-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 2px solid #4b5563;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.skills-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .skills-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.skills-name {
+  font-size: 0.75rem;
+  color: #d1d5db;
+}
+
+@media (min-width: 640px) {
+  .skills-name {
+    font-size: 0.875rem;
+  }
+}
