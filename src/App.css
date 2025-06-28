@@ -5,25 +5,35 @@
   width: 100%;
   position: relative;
   overflow-x: hidden;
+  overflow-y: auto; /* allow vertical scroll safely */
 }
 
-/* Blur blob is handled by its own component */
+/* Ensure no body leak */
+html, body {
+  background-color: #050414;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
 /* Grid overlay with radial fade */
 .grid-overlay {
   position: absolute;
   inset: 0;
-  background-image: 
+  background-image:
     linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
     linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
   background-size: 14px 24px;
   mask-image: radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Main content padding */
 .main-content {
   position: relative;
-  padding-top: 5rem; /* Equivalent to pt-20 */
+  padding-top: 5rem; /* pt-20 */
   z-index: 10;
+  background-color: transparent;
 }
