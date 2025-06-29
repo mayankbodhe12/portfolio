@@ -18,7 +18,7 @@ const Skill = () => (
         <div key={category.title} className="skills-category">
           <h3 className="skills-category-title">{category.title}</h3>
 
-          <Tilt
+{/*           <Tilt
             key={category.title}
             tiltMaxAngleX={20}
             tiltMaxAngleY={20}
@@ -26,7 +26,7 @@ const Skill = () => (
             scale={1.05}
             transitionSpeed={1000}
             gyroscope={true}
-          >
+          > */}
             <div className="skills-list">
               {category.skills.map((skill) => (
                 <div key={skill.name} className="skills-item">
@@ -39,7 +39,7 @@ const Skill = () => (
                 </div>
               ))}
             </div>
-          </Tilt>
+{/*           </Tilt> */}
         </div>
       ))}
     </div>
