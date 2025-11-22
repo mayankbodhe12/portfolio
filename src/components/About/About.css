@@ -74,7 +74,7 @@ About.css
   font-weight: bold;
   color: white;
   margin-bottom: 1rem;
-  line-height: 1.2;
+  line-height: 1.0;
 }
 
 @media (min-width: 640px) {

@@ -18,7 +18,11 @@ const Skill = () => (
         <div key={category.title} className="skills-category">
           <h3 className="skills-category-title">{category.title}</h3>
 
+<<<<<<< HEAD
           {/* <Tilt
+=======
+{/*           <Tilt
+>>>>>>> be14cfbe9ec8e56f05b6f34c212630e4ae238b2c
             key={category.title}
             tiltMaxAngleX={20}
             tiltMaxAngleY={20}
@@ -39,7 +43,11 @@ const Skill = () => (
                 </div>
               ))}
             </div>
+<<<<<<< HEAD
           {/* </Tilt> */}
+=======
+{/*           </Tilt> */}
+>>>>>>> be14cfbe9ec8e56f05b6f34c212630e4ae238b2c
         </div>
       ))}
     </div>
