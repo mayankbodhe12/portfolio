@@ -1,8 +1,16 @@
-/* .experience-section {
-  padding: 6rem 12vw;
+.experience-section {
+ padding: 6rem 12vw;
   font-family: sans-serif;
-  background: linear-gradient(to right, #6b46c1, #9f7aea);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   background: linear-gradient(
+      38.73deg,
+      rgba(204, 0, 187, 0.15) 0%,
+      rgba(201, 32, 184, 0) 50%
+    ),
+    linear-gradient(
+      141.27deg,
+      rgba(0, 70, 209, 0) 50%,
+    );
+   clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 96%, 0 100%);
 }
 
 .experience-title {
@@ -165,4 +173,4 @@
   border-radius: 0.5rem;
   margin: 0 0.5rem 0.5rem 0;
   border: 1px solid #cbd5e0;
-} */
+}

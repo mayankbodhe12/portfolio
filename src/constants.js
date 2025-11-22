@@ -16,6 +16,8 @@ import vscodeLogo from "./assets/vscode.png";
 import vercelLogo from "./assets/vercel.png";
 
 // Project Section Logo's
+import QuickAILogo from "./assets/QuickAI.png";
+import appointmentLogo from "./assets/appointment.png";
 import spotifyCloneLogo from "./assets/spotifyClone.png";
 import amazonImageLogo from "./assets/amazonImage.png";
 
@@ -62,27 +64,16 @@ export const SkillsInfo = [
   },
 ];
 
-// export const experiences = [
-//   {
-//     id: 0,
-//     // img: webverseLogo,
-//     role: "Fullstack Developer",
-//     company: "Webverse Digital",
-//     date: "April 2024 - Present",
-//     desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
-//     skills: [
-//       "HTML",
-//       "CSS",
-//       "JavaScript",
-//       "React JS",
-//       "TypeScript",
-//       "Node JS",
-//       // "Tailwind CSS",
-//       "MongoDb",
-//       // "Redux",
-//       " Next Js",
-//     ],
-//   },
+export const experiences = [
+  {
+    id: 0,
+    // img: webverseLogo,
+    role: "Java Development Intern",
+    company: "Cognifyz Technology",
+    date: "agu - Sep 2025",
+    desc: "As a Java Development Intern, I have the opportunity to work on various projects and tasks, develop robust and scalable applications, and contribute to the design and implementation of software solutions.",
+    skills: ["java"],
+  },
 // {
 //   id: 1,
 //   img: agcLogo,
@@ -116,7 +107,7 @@ export const SkillsInfo = [
 //       // "Material UI",
 //     ],
 //   },
-// ];
+];
 
 export const education = [
   {
@@ -124,7 +115,7 @@ export const education = [
     img: lnctlogoLogo,
     school: "Lakshmi Narain College Of Technology Bhopal",
     date: "Sept 2024 - Aug 2027",
-    grade: "7.12 CGPA",
+    grade: "7.20 CGPA (Till 4 Sem)",
     desc: "I am currently pursuing B.Tech in Branch Compute Science And Engineering (Internet Of Thinks) from LNCT Group Of College Bhopal. I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems.",
     degree: "B.Tech - Computer Science And Engineering (Internet Of Thinks)",
   },
@@ -149,8 +140,24 @@ export const education = [
 ];
 
 export const projects = [
-  {
+   {
     id: 0,
+    title: "Doctor Appointment Booking Platform - Prescripto",
+    description:
+      " Developed a full-stack doctor appointment booking platform featuring dedicated interfaces for admin, doctor,and user roles. The application includes secure role-based authentication, appointment scheduling, doctormanagement, and real-time updates. Designed a clean, responsive, and user-friendly UI, while ensuring smooth data flow between the front end and back end. This project strengthened my skills in full-stack development, API integration, state management, and building scalable, real-world healthcare applications.",
+    image: appointmentLogo,
+    tags: ["HTML", "Tailwind CSS", "JavaScript", "React.js", "Node.js", "Express.js", "MongoDB", "Postmap API", "API", "Git"],
+  },
+   {
+    id: 1,
+    title: "Full Stack AI SaaS Application - QuickAI",
+    description:
+      "Developed and deployed a full-stack AI SaaS application (Quick.ai) that integrates advanced AI tools for content generation, image processing, and resume review. Built with React, Node.js, Express, MYSQL, and Clerk authentication, and deployed on Vercel. Implemented secure user authentication, subscription plans, and a dynamic dashboard with features like article writing, blog title generation, image editing, and resume analysis. Designed a responsive and user-friendly UI while ensuring seamless backend integration and scalable cloud deployment.",
+    image: QuickAILogo,
+    tags: ["HTML", "Tailwind CSS", "JavaScript","React.js","Node.js", "Express.js", "MongoDB", "Postmap API", "API", "Git"],
+  },
+  {
+    id: 2,
     title: "Spotify Clone",
     description:
       "A Spotify Clone is a web or mobile application replicating Spotify's core features, such as musicstreaming, playlist creation, user authentication, and a dynamic user interface",
@@ -158,7 +165,7 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript", "API"],
   },
   {
-    id: 1,
+    id: 3,
     title: "Amazon Website",
     description:
       "An intuitive and scalable e-commerce platform enabling users to browse, purchase, and managea wide range of products and services online",

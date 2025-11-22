@@ -17,7 +17,7 @@ const About = () => {
             <span>I am a </span>
             <ReactTypingEffect
               style={{ color: "#8245ec" }}
-              text={["Mern Stack Developer", "UI/UX Designer", "Coder"]}
+              text={["MERN Stack Developer", "UI/UX Designer", "Coder"]}
               speed={100}
               eraseSpeed={50}
               typingDelay={500}
