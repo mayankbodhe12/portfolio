@@ -20,11 +20,11 @@ import QuickAILogo from "./assets/QuickAI.png";
 import appointmentLogo from "./assets/appointment.png";
 import spotifyCloneLogo from "./assets/spotifyClone.png";
 import amazonImageLogo from "./assets/amazonImage.png";
+import staySmartLogo from "./assets/staySmartLogo.png";
 
 //Educaation Section Logo's
 import lnctlogoLogo from "./assets/lnctlogo.png";
 import schoollogoLogo from "./assets/schoollogo.png";
-
 export const SkillsInfo = [
   {
     title: "Frontend",
@@ -140,24 +140,39 @@ export const education = [
 ];
 
 export const projects = [
-   {
+  {
     id: 0,
+    title: "SmartStay | Full Stack Stay Booking Platform",
+    description:
+      "Built a full-stack booking platform enabling users to explore, compare and book properties with responsive interface. Implemented JWT-based authentication and role-based access with secure REST APIs using Node.js and Express. Developed a booking system with date availability checks and split group booking with Razorpay payment integration. Integrated real-time chat and booking updates using Socket.IO, along with geolocation-based nearby stay discovery.",
+    image: staySmartLogo,
+    tags: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Postmap API", "API", "Git", "Socket.IO", "Razorpay"],
+    github: "https://github.com/mayankbodhe12/StaySmart.git",
+    webapp: "https://stay-smart-eta.vercel.app",
+  },
+
+   {
+    id: 1,
     title: "Doctor Appointment Booking Platform - Prescripto",
     description:
       " Developed a full-stack doctor appointment booking platform featuring dedicated interfaces for admin, doctor,and user roles. The application includes secure role-based authentication, appointment scheduling, doctormanagement, and real-time updates. Designed a clean, responsive, and user-friendly UI, while ensuring smooth data flow between the front end and back end. This project strengthened my skills in full-stack development, API integration, state management, and building scalable, real-world healthcare applications.",
     image: appointmentLogo,
     tags: ["HTML", "Tailwind CSS", "JavaScript", "React.js", "Node.js", "Express.js", "MongoDB", "Postmap API", "API", "Git"],
+    github: "https://github.com/mayankbodhe12/Prescripto.git",
+    webapp: "https://prescripto-kappa-eight.vercel.app",
   },
    {
-    id: 1,
+    id: 2,
     title: "Full Stack AI SaaS Application - QuickAI",
     description:
       "Developed and deployed a full-stack AI SaaS application (Quick.ai) that integrates advanced AI tools for content generation, image processing, and resume review. Built with React, Node.js, Express, MYSQL, and Clerk authentication, and deployed on Vercel. Implemented secure user authentication, subscription plans, and a dynamic dashboard with features like article writing, blog title generation, image editing, and resume analysis. Designed a responsive and user-friendly UI while ensuring seamless backend integration and scalable cloud deployment.",
     image: QuickAILogo,
     tags: ["HTML", "Tailwind CSS", "JavaScript","React.js","Node.js", "Express.js", "MongoDB", "Postmap API", "API", "Git"],
+    github: "https://github.com/mayankbodhe12/QuickAI.git",
+    webapp: "https://quickai-gs.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Spotify Clone",
     description:
       "A Spotify Clone is a web or mobile application replicating Spotify's core features, such as musicstreaming, playlist creation, user authentication, and a dynamic user interface",
@@ -165,7 +180,7 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript", "API"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Amazon Website",
     description:
       "An intuitive and scalable e-commerce platform enabling users to browse, purchase, and managea wide range of products and services online",
