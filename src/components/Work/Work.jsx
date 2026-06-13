@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { projects } from "../../constants";
-import "./Work.css"; // External styles
+import "./Work.css";
 
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -16,36 +16,42 @@ const Work = () => {
   return (
     <section id="work" className="work-section">
       {/* Section Title */}
-      <div className="work-title">
+      <div className="work-header">
         <h2 className="work-heading">PROJECTS</h2>
         <div className="work-divider"></div>
-        <p className="work-description">
+
+        <p className="work-subtitle">
           A showcase of the projects I have worked on, highlighting my skills
-          and experience in various technologies
+          and experience in various technologies.
         </p>
       </div>
 
       {/* Projects Grid */}
-      <div className="work-grid">
+      <div className="projects-grid">
         {projects.map((project) => (
           <div
             key={project.id}
+            className="project-card"
             onClick={() => handleOpenModal(project)}
-            className="work-card"
           >
-            <div className="work-card-image-container">
+            <div className="project-image-container">
               <img
                 src={project.image}
                 alt={project.title}
-                className="work-card-image"
+                className="project-image"
               />
             </div>
-            <div className="work-card-content">
-              <h3 className="work-card-title">{project.title}</h3>
-              <p className="work-card-description">{project.description}</p>
-              <div className="work-card-tags">
+
+            <div className="project-content">
+              <h3 className="project-title">{project.title}</h3>
+
+              <p className="project-description">
+                {project.description}
+              </p>
+
+              <div className="project-tags">
                 {project.tags.map((tag, index) => (
-                  <span key={index} className="work-tag">
+                  <span key={index} className="project-tag">
                     {tag}
                   </span>
                 ))}
@@ -58,14 +64,19 @@ const Work = () => {
       {/* Modal */}
       {selectedProject && (
         <div className="modal-overlay">
-          <div className="modal-content">
-            <div className="modal-close">
-              <button onClick={handleCloseModal} className="modal-close-button">
+          <div className="modal-box">
+
+            <div className="modal-close-row">
+              <button
+                className="modal-close-btn"
+                onClick={handleCloseModal}
+              >
                 &times;
               </button>
             </div>
 
             <div className="modal-body">
+
               <div className="modal-image-wrapper">
                 <img
                   src={selectedProject.image}
@@ -73,36 +84,51 @@ const Work = () => {
                   className="modal-image"
                 />
               </div>
-              <div className="modal-details">
-                <h3 className="modal-title">{selectedProject.title}</h3>
-                <p className="modal-description">{selectedProject.description}</p>
+
+              <div className="modal-content">
+
+                <h3 className="modal-title">
+                  {selectedProject.title}
+                </h3>
+
+                <p className="modal-description">
+                  {selectedProject.description}
+                </p>
+
                 <div className="modal-tags">
                   {selectedProject.tags.map((tag, index) => (
-                    <span key={index} className="work-tag">
+                    <span key={index} className="project-tag">
                       {tag}
                     </span>
                   ))}
                 </div>
-                <div className="modal-links">
+
+                <div className="modal-buttons">
+
                   <a
                     href={selectedProject.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="modal-link-code"
+                    className="code-button"
                   >
                     View Code
                   </a>
+
                   <a
                     href={selectedProject.webapp}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="modal-link-live"
+                    className="live-button"
                   >
                     View Live
                   </a>
+
                 </div>
+
               </div>
+
             </div>
+
           </div>
         </div>
       )}
