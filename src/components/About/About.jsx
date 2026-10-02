@@ -34,7 +34,7 @@ const About = () => {
             efficient solutions . I have completed my Data Structures and Algorithms course using Java.
           </p>
           <a
-            href="https://1drv.ms/b/c/2c8f589163a86fe4/EVRE-J8DBfZOmWGrHvg0xXoBDkiN1lbwhxz-DOJ7EAw6Tg"
+            href="https://drive.google.com/file/d/18nCrCD8TQq2mxWtS9PiVDOcAsd8gVBXw/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
             className="about-button"
