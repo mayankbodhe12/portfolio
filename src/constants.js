@@ -81,7 +81,7 @@ export const education = [
     img: lnctlogoLogo,
     school: "Lakshmi Narain College Of Technology Bhopal",
     date: "Sept 2024 - june 2027",
-    grade: "7.46 CGPA (Till 5 Sem)",
+    grade: "7.61 CGPA (Till 6 Sem)",
     desc: "I am currently pursuing B.Tech in Branch Compute Science And Engineering (Internet Of Thinks) from LNCT Group Of College Bhopal. I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems.",
     degree: "B.Tech - Computer Science And Engineering (Internet Of Thinks)",
   },
